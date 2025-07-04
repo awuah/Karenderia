@@ -22,6 +22,13 @@ define('PAYPAL_CLIENT_SECRET', '');
 define('STRIPE_PUBLISHABLE_KEY', '');
 define('STRIPE_SECRET_KEY', '');
 
+// Paystack Configuration
+define('PAYSTACK_MODE', 'test'); // test or live
+define('PAYSTACK_TEST_PUBLIC_KEY', 'pk_test_your_test_public_key_here');
+define('PAYSTACK_TEST_SECRET_KEY', 'sk_test_your_test_secret_key_here');
+define('PAYSTACK_LIVE_PUBLIC_KEY', 'pk_live_your_live_public_key_here');
+define('PAYSTACK_LIVE_SECRET_KEY', 'sk_live_your_live_secret_key_here');
+
 // SMS Gateway Configuration
 define('TWILIO_SID', '');
 define('TWILIO_TOKEN', '');

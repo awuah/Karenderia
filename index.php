@@ -33,6 +33,14 @@ $router->add('/register', 'AuthController@register');
 $router->add('/admin', 'AdminController@index');
 $router->add('/merchant', 'MerchantController@index');
 
+// Payment routes
+$router->add('/payment/paystack', 'PaymentController@paystack');
+$router->add('/payment/paystack/callback', 'PaymentController@paystackCallback');
+$router->add('/payment/paystack/webhook', 'PaymentController@paystackWebhook');
+$router->add('/payment/paypal', 'PaymentController@paypal');
+$router->add('/payment/stripe', 'PaymentController@stripe');
+$router->add('/payment/cod', 'PaymentController@cod');
+
 // Get current URL
 $url = $_SERVER['REQUEST_URI'];
 $url = parse_url($url, PHP_URL_PATH);
